@@ -1,0 +1,119 @@
+/* 이진정 단독 작성 */
+
+.moreItems{display: none;}
+
+.widthHolder {
+    /* position: relative; */
+    width: 1100px;
+    /* max-width: 1000px; */    
+    margin: 0 auto;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.prdList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prdList .grid-box .prdImg img {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+}
+.grid-box {
+    margin: 0 0 20px;
+    color: #757575;
+    width: 25%;
+    border-right: 10px solid transparent;
+    /* position: relative; */
+    float: left;
+    /* display: inline-block; */
+    display: flex;
+    align-self: flex-start;
+    /* *zoom: 1; */
+    /* margin: 0;
+    padding: 0; */
+    /* vertical-align: top; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#loadMore{
+    position: relative;
+    color: #477A7B;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #477A7B;
+    padding: 0 10px;
+    font-family:'GmarketSansTTFMedium';
+    font-size: 15px;
+    text-align: center;
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: 30px auto 50px;
+    cursor: pointer;
+}
+.description {
+    width: 100%;
+    /* height: 30px; */
+    /* overflow: hidden; */
+    /* 넘칠때 글자를 줄이는 방법도 있어요  그럴려면 h1 태그를 빼고 아래 spanfont에 있는 설정을 기지고 와서 1em등으로 맞춰야 할 것 같아요 */
+    /* line-height: 20px; */
+}
+.prdImg img:last-child {display: none;}
+.prdImg:hover img:first-child{display: none;}
+.prdImg:hover img:last-child{display: inline-block;}
+.spanfont {
+    font-size: 14px;
+    color: #4c4c4c;
+    /* font-weight: bold; */
+    font-family: 'GmarketSansTTFBold';
+} 
+.description .name {
+    line-height: 0.5em;
+}
+.origin_price{
+    font-size:13px;color:#4c4c4c;
+    text-decoration:line-through;
+    font-family: 'GmarketSansTTFMedium';
+    line-height: 1em;
+}
+.sale_price{
+    font-size:13px;
+    color:#4c4c4c;
+    font-family: 'GmarketSansTTFMedium';
+}
+/*  ALL PRODUCT 글자 */
+.sectionT{
+    font-family:'MapoPeacefull';
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    color: #477A7B;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin: 90px 0 30px;
+    padding: 0 10px;
+    line-height: 1.2em;
+    font-size: 35px;
+}
+.prdList{
+    list-style: none; overflow: hidden; padding-inline-start: 10px;
+}
+.chips{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px 4px 0;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    align-self: flex-end;
+}
